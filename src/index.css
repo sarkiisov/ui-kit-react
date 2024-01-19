@@ -1,4 +1,35 @@
-:root {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .active {
+    transition: transform 50ms ease;
+    transform: translateY(2px);
+  }
+}
+
+/* @layer components {
+  .button {
+    @apply inline-flex justify-center items-center
+      rounded-md font-semibold select-none
+      disabled:pointer-events-none disabled:opacity-40 disabled:shadow-none;
+
+    &-solid {
+      @apply text-red-500;
+    }
+  }
+
+  .button-solid {
+    @apply text-red-500;
+  }
+
+  /* .button-solid {
+    @apply bg-black;
+  } */
+/* } */
+
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -65,4 +96,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
