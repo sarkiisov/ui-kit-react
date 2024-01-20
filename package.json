@@ -12,9 +12,12 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@floating-ui/react": "^0.26.6",
     "clsx": "^2.1.0",
+    "cva": "^1.0.0-beta.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "tailwind-merge": "^2.2.0"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.6.10",
