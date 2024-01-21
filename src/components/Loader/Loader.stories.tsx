@@ -5,11 +5,8 @@ import { Loader } from "./Loader";
 export default {
   component: Loader,
   tags: ["autodocs"],
-  argTypes: {
-    className: { table: { disable: true } },
-  },
   args: {
-    size: 36,
+    size: "xl",
   },
 } satisfies Meta<typeof Loader>;
 

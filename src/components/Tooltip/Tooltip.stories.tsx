@@ -9,9 +9,10 @@ export default {
   argTypes: {
     label: { control: false },
     children: { control: false },
-    className: { table: { disable: true } },
+    arrowClassName: { control: false },
   },
   args: {
+    initaillyOpenend: true,
     label: "Tooltip",
     children: <Button>Tooltip button</Button>,
   },

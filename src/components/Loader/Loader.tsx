@@ -1,20 +1,19 @@
 import { cn } from "@/utils";
 import { forwardRef } from "react";
-
-interface LoaderProps {
-  size?: string | number;
-  className?: string;
-}
+import { LoaderProps } from "./Loader.types";
+import { useComponentTheme } from "@/theme";
 
 export const Loader = forwardRef<SVGSVGElement, LoaderProps>(
-  ({ className, size = 24, ...props }, ref) => {
+  ({ size = "md", className, ...props }, ref) => {
+    const theme = useComponentTheme("Loader");
+
+    const classes = cn(theme.base({ size }), className);
+
     return (
       <svg
         ref={ref}
-        className={cn("text-primary-600 animate-spin", className)}
+        className={classes}
         xmlns="http://www.w3.org/2000/svg"
-        width={size}
-        height={size}
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"
