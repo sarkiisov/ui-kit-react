@@ -22,6 +22,8 @@ export const Tooltip = forwardRef<HTMLDivElement, TooltipProps>(
       withinPortal,
       className,
       arrowClassName,
+      arrowHeight = 4,
+      arrowWidth = 10,
     },
     ref
   ) => {
@@ -63,6 +65,8 @@ export const Tooltip = forwardRef<HTMLDivElement, TooltipProps>(
             ref={arrowRef}
             context={context}
             className={arrowClasses}
+            height={arrowHeight}
+            width={arrowWidth}
           />
         )}
         {label}

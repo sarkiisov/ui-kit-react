@@ -11,4 +11,6 @@ export interface TooltipProps extends ComponentPropsWithRef<"div"> {
   placement?: Placement;
   withinPortal?: boolean;
   arrowClassName?: string;
+  arrowHeight?: number;
+  arrowWidth?: number;
 }
