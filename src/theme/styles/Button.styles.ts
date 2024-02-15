@@ -3,7 +3,8 @@ import { cva } from "cva";
 const base = cva({
   base: [
     "inline-flex justify-center items-center",
-    "rounded-md font-semibold transition-colors select-none",
+    "rounded-md font-semibold transition-colors select-none outline-none",
+    "focus-visible:ring-offset-2 focus-visible:ring-2 focus-visible:ring-primary-500",
     "disabled:opacity-50 disabled:pointer-events-none",
   ],
   variants: {
@@ -15,9 +16,9 @@ const base = cva({
       danger: "bg-danger-500 text-white hover:bg-danger-600",
     },
     size: {
-      xs: "h-7 min-w-6 text-xs px-2 gap-1",
-      sm: "h-8 min-w-8 text-sm px-3 gap-1",
-      md: "h-10 min-w-10 text-base px-4 gap-1",
+      xs: "h-5 min-w-6 text-xs px-2 gap-1",
+      sm: "h-7 min-w-8 text-sm px-3 gap-1",
+      md: "h-9 min-w-10 text-base px-4 gap-1",
       lg: "h-12 min-w-12 text-lg px-6 gap-2",
     },
     fullWidth: {
@@ -33,7 +34,7 @@ const loader = cva({
     size: {
       xs: "w-3 h-3",
       sm: "w-5 h-5",
-      md: "w-6 h-6",
+      md: "w-5 h-5",
       lg: "w-8 h-8",
     },
   },

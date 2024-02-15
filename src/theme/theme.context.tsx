@@ -9,6 +9,8 @@ export type ThemeComponents = {
   Button: typeof styles.buttonStyles;
   Loader: typeof styles.loaderStyles;
   Tooltip: typeof styles.tooltipStyles;
+  Checkbox: typeof styles.checkboxStyles;
+  Switch: typeof styles.switchVariants;
 };
 
 const defaultTheme: Theme = {
@@ -16,6 +18,8 @@ const defaultTheme: Theme = {
     Button: styles.buttonStyles,
     Loader: styles.loaderStyles,
     Tooltip: styles.tooltipStyles,
+    Checkbox: styles.checkboxStyles,
+    Switch: styles.switchVariants,
   },
 };
 
